@@ -26,7 +26,8 @@ Every trade × field ends in one of these statuses: **Match**, **False Alert** (
 
 **Windows (PowerShell)**: one-step setup:
 ```powershell
-cd TermSheet_Recon_Solution
+git clone https://github.com/babitadokania/termsheet-reconciliation.git
+cd termsheet-reconciliation
 powershell -ExecutionPolicy Bypass -File scripts\setup_windows.ps1   # venv + deps + Java check + .env
 notepad .env                                                       # paste GEMINI_API_KEY=...
 .\.venv\Scripts\Activate.ps1
@@ -35,7 +36,8 @@ python run_pipeline.py
 
 **macOS / Linux**
 ```bash
-cd TermSheet_Recon_Solution
+git clone https://github.com/babitadokania/termsheet-reconciliation.git
+cd termsheet-reconciliation
 python3.11 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env            # paste GEMINI_API_KEY=...
@@ -157,7 +159,7 @@ Unit conversions such as Rs.1,500 Crores → 15,000,000,000 and 5 bonds × Rs.10
 ├── samples/word/                # Word term sheet sample
 ├── sample_output/               # example workbook + extraction JSON
 ├── scripts/                     # setup_windows.ps1, evaluate_extraction.py, make_word_sample.py
-├── tests/                       # 43 pytest tests (offline)
+├── tests/                       # 51 pytest tests (offline)
 ├── docs/                        # assignment brief, evaluation guidelines, REPORT.pdf
 ├── REPORT.md                    # 2-page write-up
 └── Dockerfile, .github/workflows/ci.yml, pyproject.toml
@@ -166,7 +168,7 @@ Unit conversions such as Rs.1,500 Crores → 15,000,000,000 and 5 bonds × Rs.10
 ## 8. Testing and code quality
 
 ```bash
-python -m pytest                       # 43 tests, offline (~2 min): schema, parsing, LLM layer, Spark, end-to-end
+python -m pytest                       # 51 tests, offline (~2 min): schema, parsing, LLM layer, Spark, end-to-end
 pip install -r requirements-dev.txt
 ruff check . && ruff format --check .  # lint + formatting
 mypy                                   # type checking

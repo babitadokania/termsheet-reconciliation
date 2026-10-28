@@ -36,7 +36,7 @@
 - **PySpark on Windows.** The pipeline uses no UDFs and no Spark file writes (so no `winutils`), pins the worker interpreter, and binds to localhost.
 
 ## 6. Production / DevOps suggestions
-- **CI/CD.** GitHub Actions (included) runs lint (`ruff`), type checks (`mypy`), 43 offline tests, mock and replay end-to-end runs, and a live Gemini run with an accuracy gate when a repository secret is set. The Dockerfile gives a reproducible runtime (Python 3.11 + Java 17, non-root user).
+- **CI/CD.** GitHub Actions (included) runs lint (`ruff`), type checks (`mypy`), 51 offline tests, mock and replay end-to-end runs, and a live Gemini run with an accuracy gate when a repository secret is set. The Dockerfile gives a reproducible runtime (Python 3.11 + Java 17, non-root user).
 - **Deployment.** Run it event-driven (a new term sheet lands in object storage) or on a schedule via Airflow or Databricks Workflows. Read bookings from Delta tables or the booking database, and write results to a recon table that feeds an ops dashboard and an exception workflow (ServiceNow / JIRA).
 - **Scale.** Spark ingestion and comparison already scale horizontally. Extract each term sheet once per ISIN and reuse it across trades. LLM calls can use the Gemini Batch API or `mapInPandas` with a shared rate limiter.
 - **Security.** Keep keys in a secrets manager (Vault / AWS Secrets Manager). Use an enterprise endpoint (Vertex AI: data residency, no training on data). Mask counterparty and PII data before prompting. Encrypt outputs and keep extraction JSON, quotes, prompt version and model as an audit trail.
