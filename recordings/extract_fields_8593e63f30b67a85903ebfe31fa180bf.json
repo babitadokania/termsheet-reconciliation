@@ -1,0 +1,114 @@
+{
+  "provider": "gemini:gemini-3.8-flash",
+  "task": "extract_fields",
+  "response": {
+    "isin": {
+      "value": null,
+      "quote": null,
+      "confidence": 0,
+      "note": "ISIN is not specified in the provided term sheet."
+    },
+    "issuer": {
+      "value": "IDBI Bank Limited",
+      "quote": "IDBI Bank Limited",
+      "confidence": 1.0,
+      "note": null
+    },
+    "parent": {
+      "value": null,
+      "quote": null,
+      "confidence": 0,
+      "note": "No parent company is explicitly stated in the document."
+    },
+    "currency": {
+      "value": "INR",
+      "quote": "Rs.",
+      "confidence": 1.0,
+      "note": "Rs. refers to Indian Rupees (INR)."
+    },
+    "coupon_rate": {
+      "value": 10.75,
+      "quote": "10.75% p.a.",
+      "confidence": 1.0,
+      "note": null
+    },
+    "maturity_date": {
+      "value": "PERPETUAL",
+      "quote": "Perpetual",
+      "confidence": 1.0,
+      "note": null
+    },
+    "issue_date": {
+      "value": "2014-10-17",
+      "quote": "October 17, 2014",
+      "confidence": 1.0,
+      "note": null
+    },
+    "settlement_date": {
+      "value": "2014-10-17",
+      "quote": "October 17, 2014",
+      "confidence": 1.0,
+      "note": "Pay-in completion and Deemed Date of Allotment is October 17, 2014."
+    },
+    "first_interest_payment_date": {
+      "value": "2015-10-17",
+      "quote": "On the anniversary of the Deemed Date of Allotment.",
+      "confidence": 1.0,
+      "note": "Calculated as the first anniversary of the Deemed Date of Allotment (October 17, 2014)."
+    },
+    "issue_amount": {
+      "value": 15000000000,
+      "quote": "Rs.1,500 Crores",
+      "confidence": 1.0,
+      "note": "Base issue size of Rs. 1,500 Crores converted to absolute units (1 Crore = 10,000,000)."
+    },
+    "issue_price": {
+      "value": null,
+      "quote": null,
+      "confidence": 0,
+      "note": "Issue price is not explicitly specified in the term sheet."
+    },
+    "nominal_amount_per_bond": {
+      "value": 1000000,
+      "quote": "Rs.10,00,000/-",
+      "confidence": 1.0,
+      "note": null
+    },
+    "minimum_subscription": {
+      "value": 5000000,
+      "quote": "5 Bonds",
+      "confidence": 1.0,
+      "note": "Calculated as 5 Bonds at the face value of Rs. 10,00,000 per Bond."
+    },
+    "interest_payment_frequency": {
+      "value": "Annual",
+      "quote": "annually",
+      "confidence": 1.0,
+      "note": null
+    },
+    "day_count_fraction": {
+      "value": "Actual/Actual",
+      "quote": "Actual/ Actual",
+      "confidence": 1.0,
+      "note": null
+    },
+    "business_day_convention": {
+      "value": "Following",
+      "quote": "immediately next business day shall be considered as the effective date",
+      "confidence": 1.0,
+      "note": "For Coupon Payment Dates, the convention is Following (immediately next business day); for other dates, it is Preceding."
+    },
+    "business_day_locations": {
+      "value": null,
+      "quote": null,
+      "confidence": 0,
+      "note": "Business day locations are not specified in the term sheet."
+    },
+    "amortization_type": {
+      "value": "Perpetual",
+      "quote": "perpetual bonds",
+      "confidence": 1.0,
+      "note": null
+    }
+  }
+}

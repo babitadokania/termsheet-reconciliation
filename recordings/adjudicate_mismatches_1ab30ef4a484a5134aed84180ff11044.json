@@ -1,0 +1,50 @@
+{
+  "provider": "gemini:gemini-3.8-flash",
+  "task": "adjudicate_mismatches",
+  "response": {
+    "results": [
+      {
+        "id": 1,
+        "verdict": "FALSE_ALERT",
+        "reason": "The ISIN values are identical, differing only by formatting whitespace.",
+        "confidence": 0.99
+      },
+      {
+        "id": 2,
+        "verdict": "TRUE_MISMATCH",
+        "reason": "The maturity date in the term sheet (2025-10-14) differs by one day from the booking value (2025-10-15).",
+        "confidence": 0.99
+      },
+      {
+        "id": 3,
+        "verdict": "TRUE_MISMATCH",
+        "reason": "The coupon rate of 9.25% in the term sheet does not match the booked rate of 9.5%.",
+        "confidence": 0.99
+      },
+      {
+        "id": 4,
+        "verdict": "TRUE_MISMATCH",
+        "reason": "The term sheet specifies a perpetual bond whereas the booking system specifies a fixed maturity date of 2025-10-17.",
+        "confidence": 0.99
+      },
+      {
+        "id": 5,
+        "verdict": "TRUE_MISMATCH",
+        "reason": "The term sheet defines a Following business day convention whereas the booking specifies an unadjusted or generic Business day adjustment.",
+        "confidence": 0.95
+      },
+      {
+        "id": 6,
+        "verdict": "TRUE_MISMATCH",
+        "reason": "The coupon rate in the term sheet is 10.75%, which differs from the booked rate of 11%.",
+        "confidence": 0.99
+      },
+      {
+        "id": 7,
+        "verdict": "TRUE_MISMATCH",
+        "reason": "The issue date in the term sheet (October 17, 2014) differs from the booked issue date (October 10, 2014).",
+        "confidence": 0.99
+      }
+    ]
+  }
+}

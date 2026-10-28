@@ -1,0 +1,21 @@
+{
+  "_comment": "Golden (hand-verified) values for Term_Sheet_IDBI.pdf. null = not stated in the term sheet (the correct answer is to return null, not to guess).",
+  "isin": {"expected": null},
+  "issuer": {"expected": "IDBI Bank Limited"},
+  "parent": {"expected": null, "accept": ["IDBI Bank Limited"]},
+  "currency": {"expected": "INR"},
+  "coupon_rate": {"expected": 10.75},
+  "maturity_date": {"expected": "PERPETUAL"},
+  "issue_date": {"expected": "2014-10-17", "source": "Deemed Date of Allotment October 17, 2014"},
+  "settlement_date": {"expected": "2014-10-17"},
+  "first_interest_payment_date": {"expected": "2015-10-17", "source": "On the anniversary of the Deemed Date of Allotment"},
+  "issue_amount": {"expected": 15000000000, "source": "Rs.1,500 Crores (base issue, excl. green-shoe)"},
+  "issue_price": {"expected": null, "accept": [100]},
+  "nominal_amount_per_bond": {"expected": 1000000, "source": "Rs.10,00,000/- (Rupees Ten Lakh) per Bond"},
+  "minimum_subscription": {"expected": 5000000, "source": "5 Bonds x Rs.10 lakh"},
+  "interest_payment_frequency": {"expected": "Annual", "accept": ["Annually", "Yearly"]},
+  "day_count_fraction": {"expected": "Actual/Actual", "accept": ["ACT/ACT", "Actual/ Actual"]},
+  "business_day_convention": {"expected_contains": "following", "source": "coupon dates: immediately next business day; other dates: preceding"},
+  "business_day_locations": {"expected": null},
+  "amortization_type": {"expected": "Perpetual", "accept": [null]}
+}

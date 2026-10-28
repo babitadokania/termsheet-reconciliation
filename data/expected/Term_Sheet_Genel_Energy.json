@@ -1,0 +1,21 @@
+{
+  "_comment": "Golden (hand-verified) values for Term_Sheet_Genel_Energy.pdf. Used by the accuracy evaluation. 'accept' lists equivalent answers; null means the term sheet does not state the field.",
+  "isin": {"expected": "NO0010894330", "source": "ISIN: NO 0010894330"},
+  "issuer": {"expected": "Genel Energy Finance 4 Limited", "accept": ["Genel Energy Finance 4 plc"]},
+  "parent": {"expected": "Genel Energy plc"},
+  "currency": {"expected": "USD"},
+  "coupon_rate": {"expected": 9.25},
+  "maturity_date": {"expected": "2025-10-14"},
+  "issue_date": {"expected": "2020-10-14"},
+  "settlement_date": {"expected": "2020-10-14"},
+  "first_interest_payment_date": {"expected": "2021-04-14"},
+  "issue_amount": {"expected": 300000000},
+  "issue_price": {"expected": 97},
+  "nominal_amount_per_bond": {"expected": 2000},
+  "minimum_subscription": {"expected": 200000},
+  "interest_payment_frequency": {"expected": "Semi-annual", "accept": ["Semiannual", "Semi annual", "Half-yearly"]},
+  "day_count_fraction": {"expected": "30/360"},
+  "business_day_convention": {"expected": "Unadjusted"},
+  "business_day_locations": {"expected": ["Oslo", "New York"]},
+  "amortization_type": {"expected": "Bullet", "accept": ["Bullet repayment", "Repaid in full at maturity"]}
+}

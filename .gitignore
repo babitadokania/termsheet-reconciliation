@@ -1,0 +1,26 @@
+# secrets
+.env
+
+# outputs (sample_output/ is committed on purpose)
+output/
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# spark / os / editors
+spark-warehouse/
+metastore_db/
+derby.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+~$*.xlsx
+~$*.docx
+.mypy_cache/
+.ruff_cache/

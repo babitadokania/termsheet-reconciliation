@@ -1,0 +1,117 @@
+{
+  "provider": "gemini:gemini-3.8-flash",
+  "task": "extract_fields",
+  "response": {
+    "isin": {
+      "value": "NO 0010894330",
+      "quote": "ISIN: NO 0010894330",
+      "confidence": 1.0,
+      "note": null
+    },
+    "issuer": {
+      "value": "Genel Energy Finance 4 Limited",
+      "quote": "Issuer: Genel Energy Finance 4 Limited",
+      "confidence": 1.0,
+      "note": null
+    },
+    "parent": {
+      "value": "Genel Energy plc",
+      "quote": "Parent: Genel Energy plc",
+      "confidence": 1.0,
+      "note": null
+    },
+    "currency": {
+      "value": "USD",
+      "quote": "Currency: USD",
+      "confidence": 1.0,
+      "note": null
+    },
+    "coupon_rate": {
+      "value": 9.25,
+      "quote": "Coupon Rate: 9.25% p.a., semi-annual interest payments.",
+      "confidence": 1.0,
+      "note": null
+    },
+    "maturity_date": {
+      "value": "2025-10-14",
+      "quote": "Maturity Date: Expected to be 14 October 2025 (5 years after Issue Date).",
+      "confidence": 0.95,
+      "note": null
+    },
+    "issue_date": {
+      "value": "2020-10-14",
+      "quote": "Issue Date: Expected to be 14 October 2020.",
+      "confidence": 0.95,
+      "note": null
+    },
+    "settlement_date": {
+      "value": "2020-10-14",
+      "quote": "Issue Date: Expected to be 14 October 2020.",
+      "confidence": 0.85,
+      "note": "Document does not explicitly specify a separate primary settlement date; derived from the expected Issue Date."
+    },
+    "first_interest_payment_date": {
+      "value": "2021-04-14",
+      "quote": "First Interest Payment Expected to be 14 April 2021 (6 months after Issue Date).",
+      "confidence": 0.95,
+      "note": null
+    },
+    "issue_amount": {
+      "value": 300000000,
+      "quote": "Issue Amount: USD 300,000,000",
+      "confidence": 1.0,
+      "note": null
+    },
+    "issue_price": {
+      "value": 97,
+      "quote": "Issue Price: 97% of the Nominal Amount.",
+      "confidence": 1.0,
+      "note": null
+    },
+    "nominal_amount_per_bond": {
+      "value": 2000,
+      "quote": "The Bonds will have a nominal amount of USD 2,000 each.",
+      "confidence": 1.0,
+      "note": null
+    },
+    "minimum_subscription": {
+      "value": 200000,
+      "quote": "Minimum subscription and allotment amount shall be USD 200,000",
+      "confidence": 1.0,
+      "note": null
+    },
+    "interest_payment_frequency": {
+      "value": "Semi-annual",
+      "quote": "semi-annual interest payments.",
+      "confidence": 1.0,
+      "note": null
+    },
+    "day_count_fraction": {
+      "value": "30/360",
+      "quote": "Day-count fraction for coupon is “30/360”",
+      "confidence": 1.0,
+      "note": null
+    },
+    "business_day_convention": {
+      "value": "Unadjusted",
+      "quote": "business day convention is “unadjusted”",
+      "confidence": 1.0,
+      "note": null
+    },
+    "business_day_locations": {
+      "value": [
+        "Oslo",
+        "New York"
+      ],
+      "quote": "business day is “Oslo” and “New York”.",
+      "confidence": 1.0,
+      "note": null
+    },
+    "amortization_type": {
+      "value": "Bullet",
+      "quote": "Amortization: The Bonds shall be repaid in full at the Maturity Date at 100% of the Nominal Amount together with accrued interest on the redeemed Bonds.",
+      "confidence": 1.0,
+      "note": "Repayment in full at maturity represents a bullet amortization structure."
+    }
+  }
+}

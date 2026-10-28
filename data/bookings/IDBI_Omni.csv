@@ -1,0 +1,6 @@
+TradeID,ISIN,Issuer,Maturity,Notional,Coupon,Currency,SettlementDate,DayCountFraction,InterestPaymentDate,IssueDate,IssueAmount,IssuePrice,NominalAmountPerBond,InterestPaymentFrequency,BusinessDayConvention,BusinessDayLocation,AmortizationType,MinimumSubscription,Parent
+1,INE008A08U84,IDBI Bank Limited,2025-10-17,1000000,10.75,INR,2014-10-17,Actual/Actual,2015-10-17,2014-10-17,15000000000,100,1000000,Annual,Business day adjustment,"Mumbai|New Delhi",Perpetual,5000000,IDBI Bank Limited
+2,INE008A08U84,IDBI Bank Limited,2025-10-17,1000000,11.00,INR,2014-10-17,Actual/Actual,2015-10-17,2014-10-17,15000000000,100,1000000,Annual,Business day adjustment,"Mumbai|New Delhi",Perpetual,5000000,IDBI Bank Limited
+3,INE008A08U84,IDBI Bank Limited,2025-10-17,1100000,10.75,INR,2014-10-17,Actual/Actual,2015-10-17,2014-10-17,15000000000,100,1000000,Annual,Business day adjustment,"Mumbai|New Delhi",Perpetual,5000000,IDBI Bank Limited
+4,INE008A08U84,IDBI Bank Limited,2025-10-17,1000000,10.75,INR,2014-10-17,Actual/Actual,2015-10-17,2014-10-10,15000000000,100,1000000,Annual,Business day adjustment,"Mumbai|New Delhi",Perpetual,5000000,IDBI Bank Limited
+5,INE008A08U84,IDBI Bank Limited,2025-10-17,1000000,10.75,INR,2014-10-17,Actual/Actual,2015-10-17,2014-10-17,15000000000,100,1000000,Annual,Business day adjustment,"Mumbai|New Delhi",Perpetual,5000000,IDBI Bank Limited

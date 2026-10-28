@@ -1,0 +1,5 @@
+# Development / CI quality tools (not needed to run the pipeline)
+ruff>=0.6
+mypy>=1.10
+pandas-stubs>=2.0
+jsonschema>=4.0

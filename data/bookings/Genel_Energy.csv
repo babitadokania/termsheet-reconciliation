@@ -1,0 +1,6 @@
+TradeID,ISIN,Issuer,Maturity,Notional,Coupon,Currency,SettlementDate,DayCountFraction,InterestPaymentDate,IssueDate,IssueAmount,IssuePrice,NominalAmountPerBond,InterestPaymentFrequency,BusinessDayConvention,BusinessDayLocation,AmortizationType,MinimumSubscription,Parent
+1,NO0010894330,Genel Energy Finance 4 Limited,10/14/2025,3000000,9.25,USD,10/14/2020,30/360,4/14/2021,10/14/2020,300000000,97,2000,Semi-annual,Unadjusted,Oslo|New York,Bullet,200000,Genel Energy plc
+2,NO0010894330,Genel Energy Finance 4 Limited,10/15/2025,3000000,9.25,USD,10/14/2020,30/360,4/14/2021,10/14/2020,300000000,97,2000,Semi-annual,Unadjusted,Oslo|New York,Bullet,200000,Genel Energy plc
+3,NO0010894330,Genel Energy Finance 4 Limited,10/14/2025,3100000,9.25,USD,10/14/2020,30/360,4/14/2021,10/14/2020,300000000,97,2000,Semi-annual,Unadjusted,Oslo|New York,Bullet,200000,Genel Energy plc
+4,NO0010894330,Genel Energy Finance 4 Limited,10/14/2025,3000000,9.5,USD,10/14/2020,30/360,4/14/2021,10/14/2020,300000000,97,2000,Semi-annual,Unadjusted,Oslo|New York,Bullet,200000,Genel Energy plc
+5,NO0010894330,Genel Energy Finance 4 Limited,10/14/2025,3000000,9.25,USD,10/14/2020,30/360,4/14/2021,10/14/2020,300000000,97,2000,Semi-annual,Unadjusted,Oslo|New York,Bullet,200000,Genel Energy plc
