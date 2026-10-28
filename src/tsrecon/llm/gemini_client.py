@@ -153,7 +153,8 @@ class GeminiClient(LLMClient):
         if not text:
             reason = None
             with contextlib.suppress(AttributeError, IndexError, TypeError):
-                reason = response.candidates[0].finish_reason
+                candidates = response.candidates or []
+                reason = candidates[0].finish_reason if candidates else None
             raise LLMResponseFormatError(f"Gemini returned no text (finish_reason={reason})")
         return parse_json_response(text)
 

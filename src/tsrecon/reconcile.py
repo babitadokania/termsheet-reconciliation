@@ -177,7 +177,7 @@ def compare(
         *[(_num_to_str(F.col(c)) if c in NUMERIC_COLUMNS else F.col(c).cast("string")).alias(c) for c in compare_cols],
     )
     long_bk = as_str.filter(F.col("document").isNotNull()).unpivot(
-        id_cols, compare_cols, "booking_column", "booking_value"
+        tuple(id_cols), tuple(compare_cols), "booking_column", "booking_value"
     )
 
     joined = long_bk.join(extract_df, ["document", "booking_column"], "inner")

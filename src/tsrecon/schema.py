@@ -18,7 +18,7 @@ import unicodedata
 from dataclasses import dataclass
 from datetime import date
 from enum import Enum
-from typing import Annotated, Any, Generic, Literal, TypeVar
+from typing import Annotated, Any, Generic, Literal, TypeVar, cast
 
 from pydantic import BaseModel, ConfigDict, Field, StrictFloat, StrictInt, StrictStr, TypeAdapter, ValidationError
 
@@ -249,7 +249,7 @@ class TermSheetExtraction(BaseModel):
 # Validation helpers
 # --------------------------------------------------------------------------------------------
 _ADAPTERS: dict[str, TypeAdapter] = {
-    name: TypeAdapter(info.annotation) for name, info in TermSheetFields.model_fields.items()
+    name: TypeAdapter(cast(Any, info.annotation)) for name, info in TermSheetFields.model_fields.items()
 }
 
 
@@ -299,7 +299,9 @@ def validate_extraction(
     fields: dict[str, ExtractedField] = {}
     for spec in FIELD_SPECS:
         item = raw.get(spec.name)
-        base = dict(name=spec.name, label=spec.label, booking_column=spec.booking_column, kind=spec.kind)
+        base: dict[str, Any] = dict(
+            name=spec.name, label=spec.label, booking_column=spec.booking_column, kind=spec.kind
+        )
 
         if item is None:
             fields[spec.name] = ExtractedField(

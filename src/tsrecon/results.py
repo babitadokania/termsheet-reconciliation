@@ -41,9 +41,9 @@ def classify(detail: pd.DataFrame, verdicts: dict[tuple, Verdict]) -> pd.DataFra
                 status = FALSE_ALERT if v.verdict == "FALSE_ALERT" else TRUE_MISMATCH
                 reason, conf, adj, needs = v.reason, v.confidence, v.adjudicated_by, v.needs_review
         elif r == "PEER_OUTLIER":
-            status, reason, adj, needs = OUTLIER, row.rule_detail, "rule", True
+            status, reason, adj, needs = OUTLIER, str(row.rule_detail), "rule", True
         elif r == "RULE_BREACH":
-            status, reason, adj = TRUE_MISMATCH, row.rule_detail, "rule"
+            status, reason, adj = TRUE_MISMATCH, str(row.rule_detail), "rule"
         elif r == "PARSING_ERROR":
             status = PARSING_ERROR
             reason = f"Extracted value {row.ts_raw_value!r} failed schema validation: {row.ts_error}"

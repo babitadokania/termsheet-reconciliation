@@ -1,5 +1,6 @@
 # Python 3.10 - 3.12 recommended (PySpark 3.5). Java 17 (or 11) must be installed for PySpark.
 pyspark==3.5.3
+setuptools>=68  # provides distutils on Python 3.12+, which PySpark 3.5 still imports
 pandas>=2.0,<3.0
 google-genai>=1.0
 pydantic>=2.6,<3

@@ -9,10 +9,7 @@ import os
 from dataclasses import dataclass, field, replace
 from pathlib import Path
 
-try:  # python-dotenv is optional at runtime
-    from dotenv import load_dotenv
-except ImportError:  # pragma: no cover
-    load_dotenv = None
+from dotenv import load_dotenv
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
@@ -78,8 +75,7 @@ class Settings:
 
 
 def load_settings(env_file: Path | None = None, **overrides) -> Settings:
-    if load_dotenv is not None:
-        load_dotenv(env_file or PROJECT_ROOT / ".env", override=False)
+    load_dotenv(env_file or PROJECT_ROOT / ".env", override=False)
 
     provider = _envd("LLM_PROVIDER", "auto").lower()
     if provider not in VALID_PROVIDERS:
